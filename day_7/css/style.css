@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+
+[class*='col-']{
+    float: left;
+    border: 1px solid teal;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.h-50{
+    height: 50px;
+}
+.h-200{
+    height: 200px;
+}
+.h-300{
+    height: 300px;
+}.h-600{
+    height: 600px;
+}
+
+@media screen and (max-width: 600px){
+    [class*='col-']{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .col-md-1{width: 8.33%}
+    .col-md-2{width: 16.66%}
+    .col-md-3{width: 25%}
+    .col-md-4{width: 33.33%}
+    .col-md-5{width: 41.66%}
+    .col-md-6{width: 50%}
+    .col-md-7{width: 58.33%}
+    .col-md-8{width: 66.66%}
+    .col-md-9{width: 75%}
+    .col-md-10{width: 83.33%}
+    .col-md-11{width: 91.66%}
+    .col-md-12{width: 100%}
+
+    .position-relative{
+        position: relative;
+    }
+    .search-position{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.box-one{
+    height: 500px;
+    width: 800px;
+    background: green;
+    position: relative;
+}
+.box-two{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    background: red;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+.box-3{
+    height: 200px;
+    width: 200px;
+    background-color: cornflowerblue;
+    margin: 100px;
+    transition: 1s;
+    float: left;
+}
+.box-3:hover{
+    /*transform: scale(1.5);*/
+    /*transform: scaleX(1.5);*/
+    /*transform: scaleY(1.5);*/
+    transform: scale(1.5, 3);
+}
+.box-four{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: teal;
+    transition: 1s;
+    float: left;
+}
+.box-four:hover{
+    /*transform: rotate(90deg);*/
+    transform: rotateX(360deg);
+}
+.box-five{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: aqua;
+    transition: 1s;
+    float: left;
+}
+.box-five:hover{
+    transform: translate(50px, 100px);
+    /*transform: translate(20px);*/
+}
+.box-six{
+    height: 300px;
+    width: 200px;
+    background-color: pink;
+    margin: 10px;
+    float: left;
+    transition: 1s;
+}
+.box-six:hover{
+    transform: skew(90deg);
+}
+.div-one{
+    height: 200px;
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+    background-color: royalblue;
+    transform: skewY(45deg);
+}
+.div-two{
+    height: 200px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    background-color: royalblue;
+    transform: skewY(-45deg);
+}
