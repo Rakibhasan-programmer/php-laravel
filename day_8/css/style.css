@@ -1,0 +1,61 @@
+.div-one{
+    height: 300px;
+    width: 300px;
+    background-color: teal;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes animation {
+    /*0% {*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*}*/
+    /*25% {*/
+    /*    top: 0;*/
+    /*    left: 1000px;*/
+    /*}*/
+    /*50% {*/
+    /*    top: 300px;*/
+    /*    left: 1000px;*/
+    /*}*/
+    /*75% {*/
+    /*    top: 300px;*/
+    /*    left: 0;*/
+    /*}*/
+    /*100% {*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*}*/
+
+    /*from {background-color: chocolate}*/
+    /*to {background-color: aqua}*/
+
+    /*0% {background-color: aqua}*/
+    /*50% {background-color: blanchedalmond}*/
+    /*75% {background-color: deeppink}*/
+    /*100% {background-color: black}*/
+}
+.div-two{
+    width: 500px;
+    height: 500px;
+    background-image: url("../images/nature.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: slider;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes slider {
+    0% {
+        background-image: url("../images/nature.jpeg");
+    }
+    50% {
+        background-image: url("../images/bridge.jpeg");
+    }
+    100% {
+        background-image: url("../images/paper.jpeg");
+    }
+}
