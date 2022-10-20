@@ -33,53 +33,145 @@
                     <div class="card card-body">
                         <form action="" method="">
                             <div class="mt-2">
-                                <label for="">Name:</label>
+                                <label for="" class="fw-bold">Name:</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="mt-2">
-                                <label for="">Email:</label>
+                                <label for="" class="fw-bold">Email:</label>
                                 <input type="email" class="form-control">
                             </div>
                             <div class="mt-2">
-                                <label for="">Phone Number:</label>
+                                <label for="" class="fw-bold">Phone Number:</label>
                                 <input type="number" class="form-control">
                             </div>
                             <div class="mt-2">
-                                <label for="">Date of Birth:</label>
+                                <label for="" class="fw-bold">Date of Birth:</label>
                                 <input type="date" class="form-control">
                             </div>
                             <div class="mt-2">
-                                <label for="">Religion:</label>
+                                <label for="" class="fw-bold">Religion:</label>
                                 <select name="" id="" class="form-control">
                                     <option value="islam">Islam</option>
                                     <option value="hinduism">Hinduism</option>
                                 </select>
                             </div>
                             <div class="mt-2">
-                                <label for="">Gender:</label>
+                                <label for="" class="fw-bold">Gender:</label>
                                 <label for=""><input type="radio" name="gender">Male</label>
                                 <label for=""><input type="radio" name="gender">Female</label>
                                 <label for=""><input type="radio" name="gender">Others</label>
                             </div>
                             <div class="mt-2">
-                                <label for="">Address</label>
+                                <label for="" class="fw-bold">Address</label>
                                 <textarea class="form-control" name="" id="" cols="10" rows="5"></textarea>
                             </div>
                             <div class="mt-4">
-                                <input type="submit" class="btn btn-dark" value="submit">
+                                <input type="submit" class="btn btn-outline-dark w-100 fw-bold" value="submit">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <form action="">
-                        <div class="row">
-                            <label for="" class="col-md-4">Name</label>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control">
+                    <div class="card card-body">
+                        <form action="">
+                            <div class="row mt-3">
+                                <label for="name" class="col-md-4 fw-bold ">Name:</label>
+                                <div class="col-md-8">
+                                    <input id="name" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="email" class="col-md-4 fw-bold">Email:</label>
+                                <div class="col-md-8">
+                                    <input id="email" type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="phoneNumber" class="col-md-4 fw-bold">Phone Number:</label>
+                                <div class="col-md-8">
+                                    <input id="phoneNumber" type="number" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="dateOfBirth" class="col-md-4 fw-bold">Date of Brth:</label>
+                                <div class="col-md-8">
+                                    <input id="dateOfBirth" type="date" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="" class="col-md-4 fw-bold">City:</label>
+                                <div class="col-md-8">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Dhaka</option>
+                                        <option value="">Naogaon</option>
+                                        <option value="">Bogura</option>
+                                        <option value="">Pabna</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="" class="col-md-4 fw-bold">Gender:</label>
+                                <div class="col-md-8">
+                                    <label for=""><input name="gender" type="radio">Male</label>
+                                    <label for=""><input name="gender" type="radio">Female</label>
+                                    <label for=""><input name="gender" type="radio">Others</label>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="address" class="col-md-4 fw-bold">Address:</label>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" name="" id="address" cols="10" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <input type="submit" class="btn btn-outline-primary fw-bold" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- accordion -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button" data-bs-target="#divOne" data-bs-toggle="collapse">What is your name?</button>
+                                </h2>
+                                <div class="show collapse accordion-collapse" id="divOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>My name is Md Rakibul Hasan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button" data-bs-target="#divTwo" data-bs-toggle="collapse">What is your his/her name?</button>
+                                </h2>
+                                <div class="collapse accordion-collapse" id="divTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Her name is Something?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button" data-bs-target="#divThree" data-bs-toggle="collapse">What is your University name?</button>
+                                </h2>
+                                <div class="collapse accordion-collapse" id="divThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Southeast University</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
