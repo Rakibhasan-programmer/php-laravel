@@ -59,3 +59,7 @@
         background-image: url("../images/paper.jpeg");
     }
 }
+
+.h-custom{
+    height: 92vh;
+}
