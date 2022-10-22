@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+body{
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,4 +14,7 @@
 }
 .d-color{
     color: #000000;
+}
+.btn-custom{
+    background-color: gray;
 }
