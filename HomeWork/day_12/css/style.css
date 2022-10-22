@@ -12,9 +12,24 @@ body{
 .h-custom{
     height: 90vh ;
 }
-.d-color{
-    color: #000000;
-}
 .btn-custom{
     background-color: gray;
+}
+.btn-item{
+    background-color: #dca212;
+}
+.color-t{
+    color: #e0a413;
+}
+.footer-link{
+    color: #efbf45;
+}
+.category-link{
+    color: #49a1a1;
+}
+.card{
+    border: none;
+}
+.btn-item:hover{
+    color: black !important;
 }
