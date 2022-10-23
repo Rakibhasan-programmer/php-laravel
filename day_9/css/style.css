@@ -1,3 +1,7 @@
 .h-custom{
     height: 92vh;
 }
+.my-caption{
+    background-color: rgba(0,0,0,0.2);
+    bottom: 290px;
+}

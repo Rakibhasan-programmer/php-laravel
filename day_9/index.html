@@ -20,7 +20,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Service</a></li>
@@ -32,17 +32,45 @@
 
     <!--    slider-->
     <section>
-        <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carousel-slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./images/1.jpeg" alt="" class="w-100 h-custom">
+                    <div class="carousel-caption my-caption">
+                        <h2>Hello Bangladesh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam debitis.</p>
+                        <a class="btn btn-primary" href="">View More</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/2.jpeg" alt="" class="w-100 h-custom">
+                    <div class="carousel-caption my-caption">
+                        <h2>Hello Bangladesh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam debitis.</p>
+                        <a class="btn btn-primary" href="">View More</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/3.webp" alt="" class="w-100 h-custom">
+                    <div class="carousel-caption my-caption">
+                        <h2>Hello Bangladesh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam debitis.</p>
+                        <a class="btn btn-primary" href="">View More</a>
+                    </div>
                 </div>
+            </div>
+            <div class="carousel-control">
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-slider">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-slider">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-slide-to="0" data-bs-target="#carousel-slider"></button>
+                <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-slider"></button>
+                <button type="button" data-bs-slide-to="2" data-bs-target="#carousel-slider"></button>
             </div>
         </div>
     </section>
