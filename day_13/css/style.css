@@ -1,0 +1,17 @@
+.text-color{
+    color: #FF4800;
+}
+.btn-color{
+    background-color: #FF4800;
+}
+.link-hover:hover{
+    background-color: #FF4800;
+    color: white;
+}
+.btn-hover:hover{
+    background-color: #d93d00;
+}
+.banner-section{
+    background-image: url("../images/header.jpg");
+    height: 500px;
+}
