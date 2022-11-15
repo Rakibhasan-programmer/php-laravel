@@ -3,12 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
     //
+    public $products;
+
     public function home(){
-        return view('home');
+        $this->products = Product::products();
+        return view('home', [
+            'products' => $this->products,
+        ]); // compact, array
     }
     public function fullName(){
         return view('fullName');
@@ -17,8 +23,4 @@ class HomeController extends Controller
         return view('calculator');
     }
 
-//    full name
-    public function fullname1(){
-
-    }
 }

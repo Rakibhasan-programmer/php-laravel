@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="{{asset('/')}}assets/css/bootstrap.css">
 </head>
 <body>
 
@@ -72,7 +72,7 @@
 
 
 
-<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="{{asset('/')}}assets/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>
