@@ -38,11 +38,11 @@
                         @foreach($products as $product)
                             <div class="col-md-4 py-3">
                                 <div class="card">
-                                    <img src="{{asset('/')}}assets/images/{{$product['image']}}" alt="" style="height: 250px">
+                                    <img src="{{asset('/assets/images/'.$product['image'])}}" alt="" style="height: 250px">
                                     <div class="card-body">
                                         <h4 class="card-title">{{$product['name']}}</h4>
                                         <p>Price: {{$product['price']}}tk</p>
-                                        <a href="" class="btn btn-outline-dark">View</a>
+                                        <a href="{{route('product-details', ['id' => $product['id']])}}" class="btn btn-outline-dark">View Details</a>
                                     </div>
                                 </div>
                             </div>
