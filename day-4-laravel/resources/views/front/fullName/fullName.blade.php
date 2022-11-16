@@ -15,7 +15,8 @@
                             <h3 class="text-center">Get Full Name</h3>
                         </div>
                         <div class="card-body">
-                            <form action="{{route('full-name')}}" method="POST">
+                            <form action="{{route('get-full-name')}}" method="POST">
+                                @csrf
                                 <div class="row pb-3">
                                     <label for="firstName" class="col-md-4">First Name</label>
                                     <div class="col-md-8">
@@ -31,13 +32,13 @@
                                 <div class="row pb-3">
                                     <label for="fullName" class="col-md-4">Full Name</label>
                                     <div class="col-md-8">
-                                        <input type="text" value="<?php echo isset($result) ? $result : ""; ?>" name="" class="form-control" id="fullName" placeholder="Full Name">
+                                        <input type="text" readonly value="{{Session::has('result') ? Session::get('result'): ""}}" class="form-control" id="fullName" placeholder="Full Name">
                                     </div>
                                 </div>
                                 <div class="row pb-3">
                                     <label for="" class="col-md-4"></label>
                                     <div class="col-md-8">
-                                        <input class="btn btn-dark" type="submit" name="full_name_btn" value="Get Full Name">
+                                        <input class="btn btn-dark" type="submit" value="Get Full Name">
                                     </div>
                                 </div>
                             </form>
